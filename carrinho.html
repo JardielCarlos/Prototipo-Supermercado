@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="conjunto">
+      <img src="img/Bonaparte_4.png" alt="logo da página" class="logo">
+      <div class="barra">
+        <input type="text" class="barraPesquisa" placeholder="   busque aqui seu produto...">
+      </div>
+      <div>
+        <select name= "categorias" class="categorias">
+          <option value="valor1"selected disabled>Todas as categorias</option>
+          <option value="Biscoitos e Doces" >Biscoitos e Doces</option>
+          <option value="Cervejas">Cervejas</option>
+          <option value="Inseticidas">Inseticidas</option>
+          <option value="Laticínios">Laticínios</option>
+          <option value="Sucos">Sucos</option>
+          <option value="Temperos e Caldos">Temperos e Caldos</option>
+          <option value="Refrigerantes">Refrigerantes</option>
+        </select>
+      </div>
+      <div>
+        <button class="btn"><img src="img/search.svg" alt="Botão de procurar"></i></button>
+      </div>
+      <div>
+        <a href="CreateAccount.html" class="decorationNone">
+          <div class="bord">
+            <div class="login">
+              <img src="img/Account circle.svg" alt="Imagem de uma usuario em volta de um circulo">
+              <span class="textLogin">Olá, faça seu login <br><span>ou cadastre-se</span></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <a href="carrinho.html" class="decorationNone">
+        <div class="cart">
+          <div>
+            <div class="imgCart">
+              <img src="img/shopping-cart.svg" alt="Imagem de um carrinho de shopping">
+            </div>
+            <span class="textcart">Carrinho</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="divmenu">
+      <nav class="navmenu">
+        <ul class="menu">
+          <li class="liNav"><a href="index.html" class="line">Home</a></li>
+          <li class="liNav"><a href="ofertas.html" class="line">Ofertas</a></li>
+          <li class="liNav"><a href="produtos.html" class="line">Produtos </a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="boasVinda">
+      Olá senhor(a) Gabriela, vamos finalizar a compra?
+    </div>
+    <div id="divSacola">
+      <div id="sacola">
+        <div id="textSacola">
+          <p>Sacola de Compras</p>
+        </div>
+        <div id="infoPreco">
+          Preço
+        </div>
+        <div class="sacolaCompra">
+          <div class="imgCompra">
+            <img src="img/requeijão.svg" alt="" id="img">
+            <ul class="descrictionSacola">
+              <li class="titleSacola">Requeijão Qualy Tradicional 200G</li>
+              <li class="estoqueSacola"><small>Em estoque</small></li>
+              <li class="entregaSacola"><small>Frete: <a href="#" class="freteSacola">A calcular</a></small> </li>
+              <li class="categoriaSacola"><small>categoria: Laticínios</small></li>
+              <li class="quantidadeSacola">
+                <div>
+                  <div class="conjuntoSacola">
+                    <select name="quantidadeSacola" class="selectSacola">
+                      <option value="1"selected class="branco">Qtd: 1</option>
+                      <option value="2" class="branco">Qtd: 2</option>
+                      <option value="3" class="branco">Qtd: 3</option>
+                      <option value="4" class="branco">Qtd: 4</option>
+                      <option value="5+" class="branco">Qtd: 5+</option>
+                    </select>
+                    <div class="excluirSacola">
+                      <a href="" class="excluirNone">Excluir</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="infoGeral">
+            <p class="preco">R$ 10,00</p>
+            <div class="tamanho">
+              <p><small>Em até 2x de</small> </p>
+              <p><small>R$ 5,00 sem juros</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="sacolaCompra">
+          <div class="imgCompra">
+            <img src="img/cookie.svg" alt="" id="img">
+            <ul class="descrictionSacola">
+              <li class="titleSacola">Cookies Bauducco MaxiChocolate 96G</li>
+              <li class="estoqueSacola"><small>Em estoque</small></li>
+              <li class="entregaSacola"><small>Frete: <a href="#" class="freteSacola">A calcular</a></small> </li>
+              <li class="categoriaSacola"><small>categoria: Biscoitos e Doces</small></li>
+              <li class="quantidadeSacola">
+                <div>
+                  <div class="conjuntoSacola">
+                    <select name="quantidadeSacola" class="selectSacola">
+                      <option value="1"selected class="branco">Qtd: 1</option>
+                      <option value="2" class="branco">Qtd: 2</option>
+                      <option value="3" class="branco">Qtd: 3</option>
+                      <option value="4" class="branco">Qtd: 4</option>
+                      <option value="5+" class="branco">Qtd: 5+</option>
+                    </select>
+                    <div class="excluirSacola">
+                      <a href="" class="excluirNone">Excluir</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="infoGeral">
+            <p class="preco">R$ 5,99</p>
+            <div class="tamanho">
+              <p><small>Em até 2x de</small> </p>
+              <p><small>R$ 3,00 sem juros</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="sacolaCompra">
+          <div class="imgCompra">
+            <img src="img/tang.svg" alt="" id="img">
+            <ul class="descrictionSacola">
+              <li class="titleSacola">Refresco em Pó de Tangerina Tang 25G</li>
+              <li class="estoqueSacola"><small>Em estoque</small></li>
+              <li class="entregaSacola"><small>Frete: <a href="#" class="freteSacola">A calcular</a></small> </li>
+              <li class="categoriaSacola"><small>categoria: Sucos</small></li>
+              <li class="quantidadeSacola">
+                <div>
+                  <div class="conjuntoSacola">
+                    <select name="quantidadeSacola" class="selectSacola">
+                      <option value="1"selected class="branco">Qtd: 1</option>
+                      <option value="2" class="branco">Qtd: 2</option>
+                      <option value="3" class="branco">Qtd: 3</option>
+                      <option value="4" class="branco">Qtd: 4</option>
+                      <option value="5+" class="branco">Qtd: 5+</option>
+                    </select>
+                    <div class="excluirSacola">
+                      <a href="" class="excluirNone">Excluir</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="infoGeral">
+            <p class="preco">R$ 1,09</p>
+            <div class="tamanho">
+              <p><small>Em até 2x de</small> </p>
+              <p><small>R$ 0,55 sem juros</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="sacolaCompra">
+          <div class="imgCompra">
+            <img src="img/coca-cola.svg" alt="" id="img">
+            <ul class="descrictionSacola">
+              <li class="titleSacola">Coca-Cola S/ Açucar 2 Lts</li>
+              <li class="estoqueSacola"><small>Em estoque</small></li>
+              <li class="entregaSacola"><small>Frete: <a href="#" class="freteSacola">A calcular</a></small> </li>
+              <li class="categoriaSacola"><small>categoria: Refrigerantes</small></li>
+              <li class="quantidadeSacola">
+                <div>
+                  <div class="conjuntoSacola">
+                    <select name="quantidadeSacola" class="selectSacola">
+                      <option value="1"selected class="branco">Qtd: 1</option>
+                      <option value="2" class="branco">Qtd: 2</option>
+                      <option value="3" class="branco">Qtd: 3</option>
+                      <option value="4" class="branco">Qtd: 4</option>
+                      <option value="5+" class="branco">Qtd: 5+</option>
+                    </select>
+                    <div class="excluirSacola">
+                      <a href="" class="excluirNone">Excluir</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="infoGeral">
+            <p class="preco">R$ 7,99</p>
+            <div class="tamanho">
+              <p><small>Em até 2x de</small> </p>
+              <p><small>R$ 4,00 sem juros</small></p>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <div id="subtotal">
+          <p>Subtotal: <span id="spanSubtotal">R$ 25,07</span></p> 
+        </div>
+      </div>
+
+      <div id="finalizarCompra">
+        <div id="finalizarTitle">
+          <p>Resumo do Pedido</p>
+        </div>
+      <div>
+        <span>4 Produtos</span>
+        <span id="finalizarPreco">R$ 25,07</span>
+        <div id="finalizarDescricao">
+          <span>frete</span>
+          <span id="finalizarFrete">-</span>
+        </div>
+        <div id="total">
+          <span id="bold">Total</span>
+          <span id="finalizarTotal">R$ 25,07</span>
+          <div id="pagamento">
+            <p class="right ptop"><small>em 2x no cartão <img src="img/credit-card.svg" alt=""></small></p>
+            <br><p class="right"><small>ou R$ 26,82 em até 8x <img src="img/credit-card.svg" alt=""></small></p>
+          </div>
+          <div id="divFinalizar">
+            <button id="btnFinalizar">Finalizar Compra <img src="img/shopping-bag2.svg" alt="Imagem de uma sacola de compras"></button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+  </main>
+  <footer class="footer">
+    <div class="divFooter">
+      <div class="divLogo">
+        <img src="img/Bonaparte_4.png" alt="Logo do supermercado Bonaparte" class="logofooter">
+        <div class="criador">
+          <h4>Criadores da Página:</h4>
+          <p>Jardiel 
+            <a href="https://www.instagram.com/jardiel_carlos/" target="_blank"><img src="img/instagram1.svg" alt="Simbolo do Instagram"></a>
+            <a href="https://www.linkedin.com/in/jardiel-carlos-973109224/" target="_blank"><img src="img/linkedin1.svg" alt="Simbolo do Linkedin"></a>   
+            <a href="https://github.com/JardielCarlos" target="_blank"><img src="img/github1.svg" alt="Simbolo do GitHub"></a></p>
+          <p>Rodrigo
+            <a href="https://www.instagram.com/rodrigodsantosg/" target="_blank"><img src="img/instagram1.svg" alt="Simbolo do Instagram"></a>
+            <a href="" target="_blank"><img src="img/linkedin1.svg" alt="Simbolo do Linkedin"></a>   
+            <a href="https://github.com/RodrigodSantos" target="_blank"><img src="img/github1.svg" alt="Simbolo do GitHub"></a>
+          </p>
+          <p>Eurídyce
+            <a href="https://www.instagram.com/euridycekarla/" target="_blank"><img src="img/instagram1.svg" alt="Simbolo do Instagram"></a>
+            <a href="" target="_blank"><img src="img/linkedin1.svg" alt="Simbolo do Linkedin"></a>   
+            <a href="https://github.com/euridycekarla" target="_blank"><img src="img/github1.svg" alt="Simbolo do GitHub"></a>
+          </p>
+        </div>
+      </div>
+      <div class="informacoes">
+        <h4 class="space">Supermercado em Belo horizonte</h4>
+        <p >R Jose Epaminondas, 583, Centro, Belo horizonte, BH, 30672-772</p>
+        <p class="spaced">Supermercado Bonaparte Comercio Varejista De Alimentos Ltda</p>
+        <p>CNPJ: 08.015.158/0009-59</p>
+        <h4 class="espaco">Fale com o Supermercado Bonaparte</h4>
+        <p class="numero">(31)3271-4986</p>
+      </div>
+    </div>
+  </footer> 
+  <script src="js/carrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:#C5D2DE;
+}
+.logo{
+  display: flex;
+  width: 150px;
+  height: 150px;
+}
+.barraPesquisa{
+  display: flexbox;
+  border-radius: 8px 0px 0px 8px;
+  height: 40px;
+  border: transparent;
+  outline: 2px solid transparent;
+  width: 400px
+}
+.login{
+  margin-top: 60px;
+  margin-left: 30px;
+}
+.textLogin{
+  padding-left: 10px;
+  display: inline-block;
+  padding-right: 50px ;
+  border-right: solid 2px #fff;
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.cart{
+  margin-top: 60px;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+.imgCart{
+  display: inline-block;
+  padding-right: 8px;
+}
+.textcart{
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.bord:hover{
+  border-radius: 10px 10px 10px 10px;
+  background-color:#003375;
+  transition: background .4s;
+}
+.cart:hover{
+  border-radius: 10px 10px 10px 10px;
+  background-color:#003375;
+  width: 165px;
+  height: 50px;
+  transition: background .4s;
+}
+.decorationNone{
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+.conjunto{
+  display: flex;
+}
+.barra{
+  display: grid;
+  padding-top: 60px;
+  padding-left: 10px;
+}
+.categorias{
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: bold;
+  font-size: 15px;
+  margin-top: 59px;
+  width: 180px;
+  text-align: center;
+  height: 42px;
+  outline: 2px solid transparent;
+}
+
+.btn{
+  display: flex;
+  margin-top: 60px;
+  border-radius: 0px 6px 6px 0px;
+  padding-left: 12px;
+  width: 52px;
+  height: 40px;
+  align-items: center; 
+  border: transparent;
+  background: gainsboro;
+}
+
+#btn:hover{
+  background-color: rgb(102, 102, 102);
+  transition: background .4s;
+}
+
+.line{
+  text-decoration: none;
+  color: #003375;
+}
+.navmenu, .liNav, .menu{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.divmenu{
+  background-color:#C5D2DE;
+  border: solid 2px gray;
+}
+.liNav{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 60px;
+  list-style: none;
+  font-size: 19px;
+  padding-left: 60px;
+  border-radius: 12px;
+}
+.liNav:hover{
+  background-color: gray;
+  border-radius: 5px;
+  opacity: 0.9;
+  transition: background .4s;
+}
+.navmenu{
+  align-items: center;
+}
+.cabecalho{
+  background-color: #004aad;
+}
+
+.card{
+  display: block;
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 280px;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.12);
+  text-align: center;
+}
+.card:hover{
+  border: solid 1px #fc0101;
+  transition: 0.1s;
+}
+.img{
+  padding-top: 20px;
+  text-align: center;
+}
+.titulo{
+  text-align: justify;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding-left: 15px;
+  font-family: Helvetica, Arial, sans-serif
+}
+
+.text{
+  font-family: Helvetica, Arial, sans-serif
+}
+.descricao{
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+}
+.carrinho{
+  margin-top: 10px;
+  height: 70px
+}
+ .textcarrinho{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 18px;
+  border: 2px solid #003375;
+} 
+.textcarrinho:hover{
+  background-color: #004aad;
+  font-weight: bold;
+  color: #fff;
+  transition: background .3s;
+}
+.compras{
+  display: flex;
+  margin-top: 80px;
+  margin-left: 58px;
+  margin-right: 58px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.footer{
+  background-color:#004aad;
+}
+.logofooter{
+  margin-top: 10px;
+  border-radius: 10px 10px 10px 10px;
+  width: 120px;
+  height: 95px;
+}
+.divLogo{
+  text-align: center;
+  margin-left: 300px;
+}
+.informacoes{
+  font-family:Helvetica, Arial, sans-serif;
+  display: inline-block;
+  color: lightsteelblue;
+  margin-left: 200px;
+}
+.space{
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-style: bold;
+}
+.spaced{
+  margin-top: 20px;
+}
+.espaco{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.numero{
+  font-style: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: lightsteelblue;
+}
+.criador{
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px ;
+  color: lightsteelblue;
+}
+.divFooter{
+  display: flex;
+}
+#divSacola{
+  display:flex;
+}
+#sacola{
+  margin-left: 30px;
+  margin-bottom: 60px;
+  width: 970px;
+  /* height: 800px; */
+  background-color: #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+#boasVinda{
+  margin-left: 300px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+  color: #004aad;
+  margin-top: 60px;
+  width: 700px;
+}
+#textSacola{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-left: 30px;
+  
+}
+#infoPreco{
+  padding-left: 883px;
+  border-bottom: solid 1px #CCCCCC;
+  /* border-bottom: solid 1px gray; */
+
+  margin-left: 25px;
+  margin-right: 25px;
+  color: gray;
+  font-size: 14px;
+  /* padding-bottom: 10px; */
+}
+.sacolaCompra{
+  margin-top: 10px;
+  border-bottom: solid 1px #CCCCCC;
+  /* border-bottom: solid 1px gray; */
+  padding-bottom: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex
+}
+.imgCompra{
+  display: flex;
+}
+.titleSacola{
+  list-style: none;
+  font-weight: bold;
+  font-size:16px
+}
+.descrictionSacola{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.estoqueSacola{
+  margin-top: 8px ;
+  list-style: none;
+  color: green;
+}
+.entregaSacola{
+  margin-top: 3px;
+  list-style: none;
+}
+.categoriaSacola{
+  list-style: none;
+  text-decoration: none;
+  /* margin-top: 3px; */
+}
+.freteSacola{
+  color: #0066C0;
+  text-decoration: none;
+}
+.freteSacola:hover{
+  text-decoration: underline;
+}
+.quantidadeSacola{
+  margin-top: 20px;
+  list-style: none;
+}
+.selectSacola{
+  text-align: center;
+  width: 80px;
+  height: 30px;
+  border-radius: 6px 6px 6px 6px;
+  outline: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.selectSacola:hover{
+  background-color: rgb(213, 217, 217);
+  transition: background .4s;
+}
+.branco{
+  background-color:#fff;
+  border-radius: 4px 4px 4px 4px;
+}
+.conjuntoSacola{
+  display: flex;
+  /* width: 95px;
+  height: 25px;   */
+  /* border: 1px solid #fc0101; */
+}
+
+.excluirSacola{
+  margin-top: 5px;
+  margin-left: 12px;
+  height: 20px;
+  padding-left: 10px ;
+  padding-right: 8px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.excluirNone{
+  font-size: 14px;
+  text-decoration: none;
+  color: #0066C0;
+}
+.excluirNone:hover{
+  text-decoration: underline;
+}
+.infoGeral{
+  position: absolute;
+  margin-left: 788px;
+  text-align: right;
+}
+.preco{
+  font-weight: bold;
+  margin-top: 10px;
+}
+.tamanho{
+  margin-top: 5px;
+  width: 130px;
+}
+#subtotal{
+  float:right;
+  margin-right:25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: right;
+}
+#spanSubtotal{
+  font-weight: bold;
+}
+#finalizarCompra{
+  background-color:#fff;
+  width: 274px;
+  height: 340px;
+  margin-left: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 10px 10px 10px 10px;
+  /* display: flex; */
+}
+
+#finalizarTitle{
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  display:block;
+}
+
+#finalizarPreco{
+  float:right;
+  text-align: right;
+}
+#finalizarFrete{
+  /* margin-top: 20px; */
+  float: right;
+  text-align: right;
+}
+#finalizarDescricao{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+
+}
+#finalizarTotal{
+  float:right;
+  text-align: right;
+  font-weight: bold;
+}
+#total{
+  margin-top: 10px;
+}
+.right{
+  float: right;
+}
+.ptop{
+  margin-top: 6px;
+}
+#pagamento{
+  padding-bottom: 30px;
+  border-bottom: 1px solid gray;
+
+}
+#divFinalizar{
+  margin-top: 30px;
+}
+#btnFinalizar{
+  width: 270px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+  border: transparent;
+  background-color:#004aad;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+#btnFinalizar:hover{
+  background-color: #003375;
+  transition: background .4s;
+}
+#bold{
+  font-weight: bold;
+}
