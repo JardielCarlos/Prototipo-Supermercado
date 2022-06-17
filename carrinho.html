@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrinho</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/Bonaparte_4.png" type="image/x-icon">
+
 
 </head>
 
@@ -52,17 +54,17 @@
         </div>
       </a>
     </div>
-  </header>
-  <main>
     <div class="divmenu">
       <nav class="navmenu">
         <ul class="menu">
-          <li class="liNav"><a href="index.html" class="line">Home</a></li>
+          <li class="liNav"><a href="home.html" class="line">Home</a></li>
           <li class="liNav"><a href="ofertas.html" class="line">Ofertas</a></li>
           <li class="liNav"><a href="produtos.html" class="line">Produtos </a></li>
         </ul>
       </nav>
     </div>
+  </header>
+  <main>
     <div id="boasVinda">
       Olá senhor(a) Gabriela, vamos finalizar a compra?
     </div>
@@ -85,7 +87,7 @@
               <li class="quantidadeSacola">
                 <div>
                   <div class="conjuntoSacola">
-                    <select name="quantidadeSacola" class="selectSacola">
+                    <select name="quantidadeSacola" class="selectSacola" onChange="atualizarSelect()">
                       <option value="1"selected class="branco">Qtd: 1</option>
                       <option value="2" class="branco">Qtd: 2</option>
                       <option value="3" class="branco">Qtd: 3</option>
@@ -101,10 +103,10 @@
             </ul>
           </div>
           <div class="infoGeral">
-            <p class="preco">R$ 10,00</p>
+            <p class="preco">R$ 10.00</p>
             <div class="tamanho">
               <p><small>Em até 2x de</small> </p>
-              <p><small>R$ 5,00 sem juros</small></p>
+              <p><small>R$ 5.00 sem juros</small></p>
             </div>
           </div>
         </div>
@@ -119,7 +121,7 @@
               <li class="quantidadeSacola">
                 <div>
                   <div class="conjuntoSacola">
-                    <select name="quantidadeSacola" class="selectSacola">
+                    <select name="quantidadeSacola" class="selectSacola" onChange="atualizarSelect()">
                       <option value="1"selected class="branco">Qtd: 1</option>
                       <option value="2" class="branco">Qtd: 2</option>
                       <option value="3" class="branco">Qtd: 3</option>
@@ -135,10 +137,10 @@
             </ul>
           </div>
           <div class="infoGeral">
-            <p class="preco">R$ 5,99</p>
+            <p class="preco">R$ 5.99</p>
             <div class="tamanho">
               <p><small>Em até 2x de</small> </p>
-              <p><small>R$ 3,00 sem juros</small></p>
+              <p><small>R$ 3.00 sem juros</small></p>
             </div>
           </div>
         </div>
@@ -169,10 +171,10 @@
             </ul>
           </div>
           <div class="infoGeral">
-            <p class="preco">R$ 1,09</p>
+            <p class="preco">R$ 1.09</p>
             <div class="tamanho">
               <p><small>Em até 2x de</small> </p>
-              <p><small>R$ 0,55 sem juros</small></p>
+              <p><small>R$ 0.55 sem juros</small></p>
             </div>
           </div>
         </div>
@@ -203,10 +205,10 @@
             </ul>
           </div>
           <div class="infoGeral">
-            <p class="preco">R$ 7,99</p>
+            <p class="preco">R$ 7.99</p>
             <div class="tamanho">
               <p><small>Em até 2x de</small> </p>
-              <p><small>R$ 4,00 sem juros</small></p>
+              <p><small>R$ 4.00 sem juros</small></p>
             </div>
           </div>
         </div>
@@ -214,7 +216,7 @@
 
 
         <div id="subtotal">
-          <p>Subtotal: <span id="spanSubtotal">R$ 25,07</span></p> 
+          <p>Subtotal<span id="totItens"></span>: <span id="spanSubtotal"></span></p> 
         </div>
       </div>
 
@@ -223,18 +225,18 @@
           <p>Resumo do Pedido</p>
         </div>
       <div>
-        <span>4 Produtos</span>
-        <span id="finalizarPreco">R$ 25,07</span>
+        <span id="totfinalizar"></span>
+        <span id="finalizarPreco"></span>
         <div id="finalizarDescricao">
           <span>frete</span>
           <span id="finalizarFrete">-</span>
         </div>
         <div id="total">
           <span id="bold">Total</span>
-          <span id="finalizarTotal">R$ 25,07</span>
+          <span id="finalizarTotal"></span>
           <div id="pagamento">
-            <p class="right ptop"><small>em 2x no cartão <img src="img/credit-card.svg" alt=""></small></p>
-            <br><p class="right"><small>ou R$ 26,82 em até 8x <img src="img/credit-card.svg" alt=""></small></p>
+            <p class="right ptop"><small>em 2x no cartão <img src="img/credit-card.svg" alt="Imagem de um cartão de credito"></small></p>
+            <br><p class="right"><small id="porcentagem"><img src="img/credit-card.svg" alt=""></small></p>
           </div>
           <div id="divFinalizar">
             <button id="btnFinalizar">Finalizar Compra <img src="img/shopping-bag2.svg" alt="Imagem de uma sacola de compras"></button>
