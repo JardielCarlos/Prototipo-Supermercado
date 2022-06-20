@@ -8,6 +8,8 @@ var totItens = document.getElementById("totItens")
 var totfinalizar = document.getElementById("totfinalizar")
 var select = document.querySelectorAll(".selectSacola") 
 var card = document.querySelectorAll(".sacolaCompra")
+var link = document.querySelectorAll(".excluirNone")
+var sacolaCompra = document.querySelectorAll(".sacolaCompra")
 
 
 finalizarPedido.addEventListener("click", function(){
@@ -50,6 +52,7 @@ for(let a = 0; a< precos.length; a++){
 for(let i = 0; i < select.length; i++){
   select[i].addEventListener("change", function(event){
     let quantidade = event.target.value
+    
     let preco = precosFixo[i]
     let multiplicar = preco * quantidade
     let quantPreco = +(multiplicar.toFixed(2))
@@ -70,5 +73,43 @@ for(let i = 0; i < select.length; i++){
       let arredondado  = +(porcentagemtotal.toFixed(2))
       dezporcentagem.innerHTML = `ou R$ ${arredondado} em até 8x <img src="img/credit-card.svg" alt="Imagem de um cartão de credito">`
     }
+  })
+}
+
+
+
+
+let test = []
+for(let i = 0; i < link.length; i++){
+  link[i].addEventListener("click", function(){
+  test.push(i)
+  test[i] = i
+  event.preventDefault()
+  sacolaCompra[i].remove()
+  var quantProdutos = []
+  for(let a = 0; a< precos.length; a++){
+    let preco = precos[a].textContent
+    let valor = parseFloat(preco.replace("R$", ""))
+    precosModificado.push(valor)
+    quantProdutos.push(valor)
+  }
+    precosModificado[i] = 0
+    total = 0
+    for(let i = 0; i < precos.length; i++){
+      let preco = precosModificado[i]
+      total += preco
+      var arredondar = +(total.toFixed(2))
+      
+      subtotal.textContent = `R$ ${arredondar}`
+      finalizarPreco.textContent = `R$ ${arredondar}`
+      finalizarTotal.textContent = `R$ ${arredondar}`
+      
+      porcentagem = (10/100) * total
+      porcentagemtotal = total + porcentagem
+      let arredondado  = +(porcentagemtotal.toFixed(2))
+      dezporcentagem.innerHTML = `ou R$ ${arredondado} em até 8x <img src="img/credit-card.svg" alt="Imagem de um cartão de credito">`
+    }
+    totItens.textContent = `(${precos.length - test.length} itens)`
+    totfinalizar.textContent = `${precos.length - test.length} Produtos`
   })
 }
