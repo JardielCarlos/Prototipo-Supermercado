@@ -70,11 +70,16 @@ for(let selectEspecifico = 0; selectEspecifico < select.length; selectEspecifico
     let somaQuant = 0
     for(let quant =0; quant < quantModificado.length; quant++){
       somaQuant += quantModificado[quant]
+      // console.log(somaQuant);
     }
 
+    let somaTamanho = 0
+    for(let tam = 0; tam < quantModificado.length; tam++){
+      somaTamanho += quantModificado[tam]
+    }
 
-    totfinalizar.textContent = `${somaQuant} Produtos`
-    totItens.textContent = `(${somaQuant} itens)`
+    totfinalizar.textContent = `${somaTamanho} Produtos`
+    totItens.textContent = `(${somaTamanho} itens)`
     
     // Calcular os preços dinamicamente
     let preco = precosFixo[selectEspecifico]
@@ -105,13 +110,13 @@ for(let selectEspecifico = 0; selectEspecifico < select.length; selectEspecifico
 let tamanho = []
 for(let posicaoDelete = 0; posicaoDelete < link.length; posicaoDelete++){
   link[posicaoDelete].addEventListener("click", function(){
-  tamanho.push(posicaoDelete)
-  tamanho[posicaoDelete] = posicaoDelete
-  event.preventDefault()
-  sacolaCompra[posicaoDelete].remove()
-
-  
-  let quantProdutos = []
+    tamanho.push(posicaoDelete)
+    tamanho[posicaoDelete] = posicaoDelete
+    event.preventDefault()
+    sacolaCompra[posicaoDelete].remove()
+    
+    
+    let quantProdutos = []
   for(let posicaoPreco = 0; posicaoPreco< precos.length; posicaoPreco++){
     let preco = precos[posicaoPreco].textContent
     let valor = parseFloat(preco.replace("R$", ""))
@@ -119,10 +124,15 @@ for(let posicaoDelete = 0; posicaoDelete < link.length; posicaoDelete++){
     quantProdutos.push(valor)
   }
 
+  // console.log(quantModificado);
   precosModificado[posicaoDelete] = 0
   quantModificado[posicaoDelete] = 0
-    
-    
+  let somaTamanho = 0
+  for(let tam = 0; tam < quantModificado.length; tam++){
+    somaTamanho += quantModificado[tam]
+  }
+  
+  
   // Calcular os preços dinamicamente
   total = 0
   for(let posicaoPreco = 0; posicaoPreco < precos.length; posicaoPreco++){
@@ -139,10 +149,8 @@ for(let posicaoDelete = 0; posicaoDelete < link.length; posicaoDelete++){
     let arredondado  = +(porcentagemtotal.toFixed(2))
     dezporcentagem.innerHTML = `ou R$ ${arredondado} em até 8x <img src="img/credit-card.svg" alt="Imagem de um cartão de credito">`
   }
-
-  totItens.textContent = `(${precos.length - tamanho.length} itens)`
-  totfinalizar.textContent = `${precos.length - tamanho.length} Produtos`
-
+  
+  totItens.textContent = `(${somaTamanho} itens)`
+  totfinalizar.textContent = `${somaTamanho} Produtos`
   })
 }
-
