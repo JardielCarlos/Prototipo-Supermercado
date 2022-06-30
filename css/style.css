@@ -471,3 +471,147 @@ body{
 #bold{
   font-weight: bold;
 }
+.divlogin{
+  border-radius: 8px;
+  font-size: 20px;
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  height: 50px;
+  border: transparent;
+  width: 500px; 
+  text-align: center;
+  margin-left: 500px;
+  margin-top:14px;
+  margin-right: 500px;
+  
+}
+.radio{
+  text-align: center;
+}
+
+.divtextologin{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 80px;
+  font-size: 25px;
+  color: #F93535;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 150px;
+
+
+}
+.labellogin{
+  font-family:Helvetica, Arial, sans-serif;
+  margin-left: 500px;
+  margin: top 14px;
+  font-size: 16px;
+  color: #F93535;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+.entrar{
+  font-family:Helvetica, Arial, sans-serif;
+  margin-left: 650px;
+  width: 200px;
+  margin-top:14px;
+  font-size: 18px;
+  color: #003375;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid #F93535 ;
+  padding: 14px 40px;
+  transition-duration: 0.4s;
+  display: flexbox;
+}
+.entrar:hover{
+  background-color:#F93535 ; 
+  color: white;
+}
+.esqueceusenha{
+  font-family:Helvetica, Arial, sans-serif;
+  margin-left:343px;
+  margin: top 14px;
+  font-size: 16px;
+  color: #003375;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: right;
+  text-decoration: underline;
+  
+}
+.esqueceusenha:hover{
+  color: #fc0101;
+}
+.cadastro:hover {
+  color: #fc0101;
+}
+.textinho{
+  font-family:Helvetica, Arial, sans-serif;
+  display: inline-block;
+  color: #003375;
+  font-weight: bold;
+  padding: 30px;
+  margin-left: 450px;
+  text-align: center;
+}
+.cadastro{
+  font-family:Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #003375;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: right;
+  text-decoration: underline;
+}
+.genero{
+  text-align: center;
+  align-items: center;
+  font-family:Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #003375;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+.test{
+  margin-top: 30px; 
+  display:flex;
+  padding-right: 10px;
+}
+#genero{
+  /* margin-right: 10px; */
+}
+.feminino{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.radioFeminino{
+  margin-top: 10px;
+  margin-right: 5px;
+}
+#telefone{
+  margin-top: 20px;
+}
+#nascimento{
+  margin-top: 20px;
+}
+#email{
+  margin-top: 20px;
+}
+#senha{
+  margin-top: 20px;
+}
+.newTest{
+  /* width: 1000px; */
+  /* background-color:#FFF; */
+  /* text-align: center; */
+
+}
