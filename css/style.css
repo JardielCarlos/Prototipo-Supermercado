@@ -249,6 +249,7 @@ body{
 }
 #divSacola{
   display:flex;
+  min-height: 400px;
 }
 #sacola{
   margin-left: 30px;
