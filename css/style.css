@@ -586,9 +586,7 @@ body{
   display:flex;
   padding-right: 10px;
 }
-#genero{
-  /* margin-right: 10px; */
-}
+
 .feminino{
   display: flex;
   margin-left: 20px;
@@ -610,11 +608,7 @@ body{
 #senha{
   margin-top: 20px;
 }
-.newTest{
-  /* width: 1000px; */
-  /* background-color:#FFF; */
-  /* text-align: center; */
-}
+
 .flex{
     display: flex;
 }
