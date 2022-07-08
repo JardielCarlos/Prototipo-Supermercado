@@ -190,13 +190,21 @@ body{
   margin-top: 10px;
   height: 70px
 }
- .textcarrinho{
+
+.textcarrinho{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   border-radius: 10px 10px 10px 10px;
   font-size: 18px;
   border: 2px solid #003375;
 } 
+.textcarrinho img{
+  margin-left: 5px;
+}
 .textcarrinho:hover{
   background-color: #004aad;
   font-weight: bold;
@@ -466,6 +474,10 @@ body{
   margin-top: 30px;
 }
 #btnFinalizar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   width: 270px;
   height: 50px;
   border-radius: 10px 10px 10px 10px;
@@ -475,6 +487,9 @@ body{
   font-weight: bold;
   font-size: 18px;
   text-align: center;
+}
+#btnFinalizar img{
+  margin-left: 5px;
 }
 #btnFinalizar:hover{
   background-color: #003375;
@@ -813,8 +828,8 @@ body{
   margin: 5px 22px;
 }
 
-.oferta{
-  margin: 20px 20px;
+.categoria{
+  margin: 20px 30px;
   font-weight: 400;
   font-size: 25px;
 }
@@ -848,8 +863,13 @@ body{
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
-  width: 1250px;
+  width: 994px;
+  margin-left: 0;
   margin-bottom: 50px;
+}
+
+.produtosOferta .card{
+  margin-right: 25px;
 }
 
 .produtosOferta .card .titulo{
@@ -857,7 +877,7 @@ body{
   text-decoration: line-through;
 }
 .produtosOferta .card .titulo-2{
-  color: #127c42;
+  color: #127d42;
 }
 
 .category .flex{
@@ -869,4 +889,28 @@ body{
   margin-bottom: 30px;
 }
 
+.barra-lateral {
+  width: 250px;
+  height: 830px;
+  background-color: #fff;
+  margin: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: #003375 solid 2px;
+}
 
+.barra-lateral h4{
+  margin: 8px;
+  color: #003375;
+}
+.barra-lateral ul{
+  list-style: none;
+}
+.barra-lateral li{
+  margin: 0 10px;
+}
+.ofertas{
+  margin: 20px 30px;
+  font-weight: 400;
+  font-size: 25px;
+}
