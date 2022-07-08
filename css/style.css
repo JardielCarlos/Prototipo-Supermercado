@@ -801,3 +801,61 @@ body{
 .box-meio .h1-10{
   margin: 5px 22px;
 }
+
+
+.oferta{
+  margin: 20px 20px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.category li {
+  margin: 0;
+  width: 120px;
+  text-align: center;
+  padding: 8px 0px;
+  border-radius: 10px;
+  transition: .2s
+}
+
+.category img{
+  width: 80px;
+  margin: 0;
+  border-radius: 10px;
+}
+.category li:hover {
+  background-color: #8C8C8C;
+}
+
+.category .box-meio {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 0;
+}
+
+.produtosOferta{
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1250px;
+  margin-bottom: 50px;
+}
+
+.produtosOferta .card .titulo{
+  color: #fc0101;
+  text-decoration: line-through;
+}
+.produtosOferta .card .titulo-2{
+  color: #127c42;
+}
+
+.category .flex{
+  margin: 0 auto;
+}
+
+.border{
+  border-bottom: 2px solid gray;
+  margin-bottom: 30px;
+}
+
