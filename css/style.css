@@ -2,27 +2,32 @@
   padding: 0px;
   margin: 0px;
 }
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color:#C5D2DE;
 }
+
 .logo{
   display: flex;
   width: 150px;
   height: 150px;
 }
+
 .barraPesquisa{
-  display: flexbox;
+  display: flex;
   border-radius: 8px 0px 0px 8px;
   height: 40px;
   border: transparent;
   outline: 2px solid transparent;
-  width: 400px
+  width: 400px;
 }
+
 .login{
   margin-top: 60px;
   margin-left: 30px;
 }
+
 .textLogin{
   padding-left: 10px;
   display: inline-block;
@@ -33,26 +38,31 @@ body{
   text-decoration: none;
   font-weight: bold;
 }
+
 .cart{
   margin-top: 60px;
   padding-top: 5px;
   padding-left: 30px;
 }
+
 .imgCart{
   display: inline-block;
   padding-right: 8px;
 }
+
 .textcart{
   font-size: 20px;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
+
 .bord:hover{
   border-radius: 10px 10px 10px 10px;
   background-color:#003375;
   transition: background .4s;
 }
+
 .cart:hover{
   border-radius: 10px 10px 10px 10px;
   background-color:#003375;
@@ -60,6 +70,7 @@ body{
   height: 50px;
   transition: background .4s;
 }
+
 .decorationNone{
   text-decoration: none;
   color: black;
@@ -69,11 +80,13 @@ body{
 .conjunto{
   display: flex;
 }
+
 .barra{
   display: grid;
   padding-top: 60px;
   padding-left: 10px;
 }
+
 .categorias{
   font-family: Helvetica, Arial, sans-serif;
   font-style: bold;
@@ -95,6 +108,7 @@ body{
   align-items: center; 
   border: transparent;
   background: gainsboro;
+  cursor: pointer;
 }
 
 #btn:hover{
@@ -118,12 +132,9 @@ body{
   border: solid 2px gray;
 }
 .liNav{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 60px;
+  padding: 20px 60px;
   list-style: none;
   font-size: 19px;
-  padding-left: 60px;
   border-radius: 12px;
 }
 .liNav:hover{
@@ -802,7 +813,6 @@ body{
   margin: 5px 22px;
 }
 
-
 .oferta{
   margin: 20px 20px;
   font-weight: 400;
@@ -858,4 +868,5 @@ body{
   border-bottom: 2px solid gray;
   margin-bottom: 30px;
 }
+
 
